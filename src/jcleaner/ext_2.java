@@ -5,7 +5,10 @@
  */
 package jcleaner;
 
+<<<<<<< HEAD
 import java.awt.CheckboxGroup;
+=======
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
 import java.awt.Cursor;
 import java.awt.GridBagConstraints;
 import java.awt.Toolkit;
@@ -33,7 +36,10 @@ public class ext_2 extends javax.swing.JPanel implements ActionListener,
       private Task3 task3;
       long difference,difference1;
     int val=0;
+<<<<<<< HEAD
     CheckboxGroup browsers = new CheckboxGroup();
+=======
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
     
      private String[] browser = new String[11];
      
@@ -44,7 +50,11 @@ public class ext_2 extends javax.swing.JPanel implements ActionListener,
         gridBagConstraints = new java.awt.GridBagConstraints();
         
         initComponents();
+<<<<<<< HEAD
        
+=======
+        
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
         
         
         jProgressBar_a.setValue(0);
@@ -72,6 +82,7 @@ public class ext_2 extends javax.swing.JPanel implements ActionListener,
             int progress1 = 0;
             //Initialize progress property.
             setProgress(0);
+<<<<<<< HEAD
               long lStartTime = new Date().getTime();
              startWaitCursor();
                for(int i=1; i < 6; i++){
@@ -148,11 +159,62 @@ public class ext_2 extends javax.swing.JPanel implements ActionListener,
                       
             
               
+=======
+             startWaitCursor();
+            while (progress1 < 100) {
+                //Sleep for up to one second.
+                try {
+                    Thread.sleep(difference);
+                } catch (InterruptedException ignore) {}
+                //Make random progress.
+                 long lStartTime = new Date().getTime();
+                 
+                 
+        //some tasks
+                 
+                 
+                  for(int i=1; i < 6; i++){
+                      
+                         if(!browser[i].equals("")){
+                     
+                            if(browser[i].equals("ie_2")){
+            cmd.adv_IE();
+          
+    
+         }
+                            
+                       
+                       if(browser[i].equals("chrome_2")){
+            cmd.chrome();
+           
+              
+            }     if(browser[i].equals("mozila_2")){
+            cmd.firefox();
+           
+               
+            }   
+            
+              if(browser[i].equals("safari_2")){
+            cmd.safari();
+           
+               
+            }  
+                if(browser[i].equals("opera_2")){
+            cmd.opera();
+           
+               
+            }   
+                         }          
+                            
+                  }
+                   long lEndTime = new Date().getTime();
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
                    difference = lEndTime - lStartTime;
                 progress1 += difference;
                  setProgress(Math.min(progress1, 100));
             }
             stopWaitCursor();
+<<<<<<< HEAD
                
             return null;
                } 
@@ -160,6 +222,11 @@ public class ext_2 extends javax.swing.JPanel implements ActionListener,
         
  
 
+=======
+            return null;
+        }
+ 
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
         /*
          * Executed in event dispatching thread
          */
@@ -182,6 +249,7 @@ public class ext_2 extends javax.swing.JPanel implements ActionListener,
             int progress1 = 0;
             //Initialize progress property.
             setProgress(0);
+<<<<<<< HEAD
              long lStartTime = new Date().getTime();
              startWaitCursor();
              
@@ -227,11 +295,55 @@ public class ext_2 extends javax.swing.JPanel implements ActionListener,
                           
                            if(op_a.isSelected()){ 
             
+=======
+             startWaitCursor();
+            while (progress1 < 100) {
+                //Sleep for up to one second.
+                try {
+                    Thread.sleep(difference);
+                } catch (InterruptedException ignore) {}
+                //Make random progress.
+                 long lStartTime = new Date().getTime();
+                 
+                 
+        //some tasks
+                 
+                 
+                  for(int i=6; i < 11; i++){
+                     
+                      
+                      if(!browser[i].equals("")){
+                          
+                          
+                            if(browser[i].equals("ie_1")){
+            cmd.adv_IE();
+          
+    
+                          }            
+                       
+                       if(browser[i].equals("chrome_1")){
+            cmd.adv_chrome();
+           
+              
+            }     if(browser[i].equals("mozila_1")){
+            cmd.adv_firefox();
+           
+               
+            }      
+            
+             if(browser[i].equals("safari_1")){
+            cmd.adv_safari();
+           
+               
+            }  
+              if(browser[i].equals("opera_1")){
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
             cmd.adv_opera();
            
                
             }      
                             
+<<<<<<< HEAD
                       }
                     long lEndTime = new Date().getTime();
             while (progress1 < 100) {
@@ -248,6 +360,11 @@ public class ext_2 extends javax.swing.JPanel implements ActionListener,
                                
                   
                  
+=======
+                      }              
+                  }
+                   long lEndTime = new Date().getTime();
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
                    difference = lEndTime - lStartTime;
                 progress1 += difference;
                  setProgress(Math.min(progress1, 100));

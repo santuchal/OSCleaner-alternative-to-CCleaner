@@ -11,16 +11,22 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+=======
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
 import java.util.Date;
 import java.util.Random;
 import javax.swing.JOptionPane;
 import javax.swing.JProgressBar;
 import javax.swing.RootPaneContainer;
 import javax.swing.SwingWorker;
+<<<<<<< HEAD
 import static jcleaner.cmd.line;
 import static jcleaner.cmd.line1;
+=======
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
 
 
 /**
@@ -38,7 +44,10 @@ public class ext_1 extends javax.swing.JPanel implements ActionListener,
     private Task1 task1;
     long difference,difference1;
     int val=0;
+<<<<<<< HEAD
   //  public static String line1,line2;
+=======
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
     public ext_1() {
         
         
@@ -64,11 +73,16 @@ public class ext_1 extends javax.swing.JPanel implements ActionListener,
             while (progress < 100) {
                 //Sleep for up to one second.
                 try {
+<<<<<<< HEAD
                     Thread.sleep(difference+1000);
+=======
+                    Thread.sleep(difference);
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
                 } catch (InterruptedException ignore) {}
                 //Make random progress.
                  long lStartTime = new Date().getTime();
                     //some tasks
+<<<<<<< HEAD
                   try {
             ProcessBuilder builder = new ProcessBuilder(
                     "cmd.exe", "/c", "erase \"%TEMP%\\*.*\" /f /s /q");
@@ -92,6 +106,9 @@ public class ext_1 extends javax.swing.JPanel implements ActionListener,
         } catch (Exception e) {
 
         }
+=======
+                    cmd.temp_del();
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
             long lEndTime = new Date().getTime();
 
          difference = lEndTime - lStartTime;
@@ -109,8 +126,12 @@ public class ext_1 extends javax.swing.JPanel implements ActionListener,
             Toolkit.getDefaultToolkit().beep();
             jButton1.setEnabled(true);
             setCursor(null); //turn off the wait cursor
+<<<<<<< HEAD
             
             jTextArea1.append("Done!\n");
+=======
+           // taskOutput.append("Done!\n");
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
         }
     }
  
@@ -127,11 +148,16 @@ public class ext_1 extends javax.swing.JPanel implements ActionListener,
             while (progress < 100) {
                 //Sleep for up to one second.
                 try {
+<<<<<<< HEAD
                     Thread.sleep(difference1+500);
+=======
+                    Thread.sleep(difference1);
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
                 } catch (InterruptedException ignore) {}
                 //Make random progress.
                  long lStartTime = new Date().getTime();
                     //some tasks
+<<<<<<< HEAD
                  try {
             ProcessBuilder builder = new ProcessBuilder(
                     "cmd.exe", "/c", "for /D %i in (\"%TEMP%\\*\") do RD /S /Q \"%i\""); // Delete All temporary file from from appdata
@@ -273,6 +299,9 @@ public class ext_1 extends javax.swing.JPanel implements ActionListener,
 
         }
                  
+=======
+                    cmd.adv_temp_del_all_user();
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
             long lEndTime = new Date().getTime();
 
          difference1 = lEndTime - lStartTime;
@@ -290,7 +319,11 @@ public class ext_1 extends javax.swing.JPanel implements ActionListener,
             Toolkit.getDefaultToolkit().beep();
             jButton2.setEnabled(true);
             setCursor(null); //turn off the wait cursor
+<<<<<<< HEAD
             jTextArea3.append("Done!\n");
+=======
+           // taskOutput.append("Done!\n");
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
         }
     }
  
@@ -501,16 +534,28 @@ public class ext_1 extends javax.swing.JPanel implements ActionListener,
         if ("progress" == evt.getPropertyName()) {
             int progress = (Integer) evt.getNewValue();
             jProgressBar1.setValue(progress);
+<<<<<<< HEAD
           //   if(cmd.line!=null){
          
           //   }
+=======
+             if(cmd.line!=null){
+            jTextArea1.append(cmd.line+"\n");
+             }
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
         } 
       }
       if(val==1){
          if ("progress" == evt.getPropertyName()) {
             int progress = (Integer) evt.getNewValue();
             jProgressBar2.setValue(progress);
+<<<<<<< HEAD
           
+=======
+           if(cmd.line1!=null){
+            jTextArea3.append(cmd.line1+"\n");
+           }
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
         }
       }
     }

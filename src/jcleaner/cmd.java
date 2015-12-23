@@ -17,8 +17,12 @@ public class cmd {
 
    public static JTextArea jTextArea = new JTextArea();
    public static String line;
+<<<<<<< HEAD
     public static String line1;
     public static String line2,line3,line4,line5,line6,line7,line8,line9,line10,line11,line12;
+=======
+    public static String line1,line2,line3,line4,line5,line6,line7,line8,line9,line10,line11,line12;
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
     public static void temp_del() {
         try {
             ProcessBuilder builder = new ProcessBuilder(
@@ -138,8 +142,11 @@ public class cmd {
                 System.out.println(line9);
             }
         } catch (Exception e) {
+<<<<<<< HEAD
             
              System.out.println("Not Installed");
+=======
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
 
         }
     }

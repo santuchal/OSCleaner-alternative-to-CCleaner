@@ -7,9 +7,14 @@
 package jcleaner;
 
 import java.awt.BorderLayout;
+<<<<<<< HEAD
 import java.awt.Toolkit;
 import java.lang.management.ManagementFactory;
 import javax.swing.UIManager;
+=======
+import javax.swing.UIManager;
+import java.lang.management.ManagementFactory;
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
 /**
  *
  * @author pc1
@@ -21,13 +26,21 @@ public class home extends javax.swing.JFrame {
      */
     public home() {
         initComponents();
+<<<<<<< HEAD
         setIcon();
+=======
+        
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
 
 /**
  *
  * @author pc 5
  */
+<<<<<<< HEAD
   
+=======
+   
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
   String nameOS; 
   String usernameOS = "user.name";
   String versionOS = "os.version";  
@@ -48,10 +61,17 @@ public class home extends javax.swing.JFrame {
   
   String mem = String.valueOf(memorySize);
   
+<<<<<<< HEAD
   jLabel3.setText("Operating System: "+System.getProperty("os.name"));
   jLabel4.setText("System Type: "+System.getProperty(architectureOS));
   jLabel5.setText("System User Name: "+ System.getProperty(usernameOS));
   jLabel6.setText("RAM Size: "+memorySize+" Bytes");
+=======
+  jLabel3.setText(System.getProperty("os.name"));
+  jLabel4.setText(System.getProperty(architectureOS));
+  jLabel5.setText(System.getProperty(cpu_list));
+  jLabel6.setText(mem+" bytes");
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
   
   
     }
@@ -80,7 +100,10 @@ public class home extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+<<<<<<< HEAD
         setTitle("OS Cleaner");
+=======
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -293,8 +316,11 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
+<<<<<<< HEAD
 
     private void setIcon() {
        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
     }
+=======
+>>>>>>> 9af5a98b535e2c70e9b3ed7ffddc77c8c60891e8
 }
